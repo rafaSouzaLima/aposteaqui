@@ -1,0 +1,213 @@
+/*Estilização do jogo do Sorteio*/
+
+/*Informações que aparecem antes do jogo*/
+.jogoSorteio{
+    color:#5a005a;
+}
+
+.jogoSorteio h1{
+    font-size:3em;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.jogoSorteio > p{
+    font-size:1.5em;
+    text-align:left;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.jogoSorteio > p a{
+    text-decoration:underline;
+}
+.jogoSorteio > p a:hover{
+    color:red;
+}
+
+.exibeJogo, h1, .exibeSaldo, .jogoSorteio > p{
+    margin:10px auto;
+    width:95%;
+}
+.exibeSaldo{
+    font-size:1.5em;
+    font-weight:bold;
+    text-align:right;
+    margin-top:20px;
+    margin-bottom:30px;
+    display:inline-block;
+}
+.exibeSaldo label{
+    margin-right:260px;
+}
+.exibeSaldo input{
+    padding:10px;
+    border-radius:15px;
+    font-size:1.5rem;
+    border:2px solid #5a005a;
+    color:#5a005a;
+    width:300px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Área ativa do jogo do sorteio*/
+.exibeJogo{
+    display:block;
+    height:auto;
+    border:2px solid #5a005a;
+    text-align:center;
+    position:relative;
+}
+.exibeInfo label{
+    font-weight:bold;
+    font-size:2em;
+}
+.exibeInfo:nth-child(2) label{/*Seleciona a div do meio*/
+    display:block;
+    margin:10px 0px 5px 0px;
+    font-weight:bold;
+    font-size:2em;
+}
+.exibeJogo .exibeInfo{
+    display:inline-block;
+    margin:10px 0px 10px 0px;
+}
+.exibeJogo .exibeInfo:nth-child(2){/*Seleciona a div do meio*/
+    margin:10px 20px 10px 20px;
+}
+.exibeJogo .exibeInfo input{ /*A partir do primeiro elemento (segundo), seleciona os elementos ímpares*/
+    border:2px solid #5a005a;
+    border-radius:20px;
+    padding:10px;
+    text-align:center;
+    font-size:1.5em;
+    width:100px;
+    overflow:hidden;
+    vertical-align:bottom;
+    font-family:'Times New Roman', Times, serif;
+    color:#5a005a;
+}
+.exibeJogo .exibeInfo:nth-child(2) input{ /*Seleciona a div do meio*/
+    font-size:4em;
+    width:200px;
+    height:200px;
+    border-radius:61px;
+    border:2px solid #5a005a;
+    overflow:hidden;
+}
+
+.exibeStatus{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.exibeStatus p{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:2em;
+    font-weight:bold;
+}
+.exibeStatus label{
+    display:inline-block;
+    font-size:1.5em;
+    width:120px;
+    vertical-align:middle;
+}
+.exibeStatus input{
+    display:inline-block;
+    border:2px solid #5a005a;
+    border-radius:20px;
+    width:200px;
+    padding:10px;
+    height:1.5em;
+    font-size:1.5em;
+    overflow:hidden;
+    text-align:center;
+    font-family:'Times New Roman', Times, serif;
+    color:#5a005a;
+}
+
+.containerBt {
+    display:none;
+    width:300px;
+    top:85px;
+    right:calc(50% - 150px);
+    position:absolute;
+    text-align:center;
+}
+.btReiniciar{
+    text-align:center;
+    border:2px solid #5a005a;
+    border-radius:15px;
+    padding:5px 50px;
+    color:#5a005a;
+    font-size:1.5em;
+    background-color: #e2c8e2;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+.btReiniciar:hover{
+    background-color: #cc3838;
+    color:rgb(255, 255, 255);
+    padding:5px 80px;
+    border:4px solid #ffffff;
+}
+
+/*Campos de entrada que ficam depois da área do jogo*/
+.camposEntrada1, .camposEntrada2{
+    display:inline-block;
+    vertical-align:top;
+    padding:10px;
+    width:43%;
+}
+.camposEntrada1, .camposEntrada2{
+    margin-left:2.5%;
+    margin-right:2.5%;
+}
+.campo{
+    font-size:1.5em;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-align:left;
+}
+.campoVal{
+    padding:10px;
+    border-radius:15px;
+    font-size:1.5rem;
+    border:2px solid #5a005a;
+    color:#5a005a;
+    width:300px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.botaoAposta, .botaoDefine{
+    margin-top:10px;
+    margin-bottom:40px;
+}
+.botaoAposta input, .botaoDefine input{
+    text-align:center;
+    border:2px solid #5a005a;
+    border-radius:15px;
+    padding:5px 50px;
+    color:#5a005a;
+    font-size:1.5em;
+    background-color: #e2c8e2;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+.botaoAposta input:hover{
+    background-color: #00FA9A;
+    color:rgb(255, 255, 255);
+    padding:5px 80px;
+    border:2px solid #ffffff;
+}
+.botaoAposta input:active, .botaoDefine input:active{
+    opacity:0.4;
+}
+.botaoDefine{
+    margin-top:20px;
+}
+.botaoDefine input:hover{
+    background-color: #005eac;
+    color:rgb(255, 255, 255);
+    padding:5px 80px;
+    border:2px solid #ffffff;
+}

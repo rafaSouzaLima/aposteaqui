@@ -1,0 +1,93 @@
+/*Estilização do formulário no geral*/
+
+/*Seção principal onde está o formulário*/
+.mainSection, .confirmacaoSection{  
+    color:#5a005a;
+    width:70%;
+    border:1px solid #5a005a;
+    margin:20px auto;
+}
+h1{
+    font-size:2rem;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.campos{
+    margin:10px auto;
+    width:430px;
+    text-align:left;
+}
+.campos label{
+    font-weight:bold;
+}
+.campos input{
+    display:inline-block;
+    border:2px solid #5a005a;
+    border-radius:10px;
+    width:400px;
+    padding:10px;
+    font-size:1em;
+    overflow:hidden;
+    text-align:left;
+    font-family:'Times New Roman', Times, serif;
+    color:#5a005a;
+}
+
+.botaoForm1{
+    margin:10px auto;
+    width:360px;
+}
+.botaoForm2{
+    margin:10px auto;
+    width:170px;
+}
+.botao1, .botao2, .botao3{
+    text-align:center;
+    border:2px solid #5a005a;
+    border-radius:15px;
+    padding:5px 50px;
+    color:#5a005a;
+    font-size:1em;
+    background-color: #e2c8e2;
+    cursor:pointer;
+    transition:all 0.3s;
+}
+.botao1:hover, .botao2:hover, .botao3:hover{
+    color:rgb(255, 255, 255);
+    border:2px solid #ffffff;
+}
+.botao1:hover{
+    background-color: #00e08a;
+}
+.botao2:hover{
+    background-color: #cc3838;
+}
+.botao3:hover{
+    background-color:#87CEFA;
+}
+.botaoForm1 .botao1:nth-child(1){
+    margin-right:10px;
+}
+
+
+
+/*Seção onde aparece a confirmação dos dados*/
+.confirmacaoSection{
+    padding-top:10px;
+    padding-bottom:50px;
+}
+.confirmacaoSection h2{
+    font-size:2rem;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.confirmacaoSection p{
+    font-weight:bold;
+    font-size:1.5rem;
+    margin:5px 0px 5px 30px;
+}
+.confirmacaoSection p span{
+    font-weight:normal;
+}

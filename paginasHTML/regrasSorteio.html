@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>APOSTE AQUI</title>
+    <link rel = "shortcut icon" href = "../imagens/favicons/favicon.ico">
+    <link rel = "stylesheet" href = "../estilosCSS/layout.css">
+    <link rel = "stylesheet" href = "../estilosCSS/regrasSorteio.css">
+  </head>
+  <body>
+    <nav class = "topNav">
+      <ul class = "menu">
+        <li>
+          <a href = "../index.html">
+            <span id = "naipePaus">&#9827;</span>
+            <span id = "mainTitulo">APOSTE AQUI</span>
+            <span id = "naipeCopas">&#9829;</span>
+          </a>
+        </li>
+        <li>
+          <a href = "#">JOGOS</a>
+          <ul class = "submenu">
+            <li>
+              <a href = "../paginasHTML/sorteio.html">Sorteio</a>
+            </li>
+            <li>
+              <a href="#">Roleta (EM BREVE)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href = "../paginasHTML/formulario.html">ENTRAR</a>
+        </li>
+        <li>
+          <a href = "#">MAIS</a>
+          <ul class = "submenu">
+            <li><a href = "../paginasHTML/regrasSorteio.html">Regras Sorteio</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+      <section class = "regrasSorteioSection"> 
+        <article>
+          <h1>Regras - Jogo Sorteio</h1>
+          <h2>Regras Gerais:</h2>
+          <ol class = "regrasBasicas">
+            <li>Coloque o número mínimo e um número máximo, onde o valor sorteado será 
+              um número aleatório entre esse valor mínimo e o valor máximo (ambos estando
+              inclusos).
+            </li>
+            <li>Aperte o botão DEFINIR INTERVALO e os valores mínimos e máximos serão colocados
+              acima, além do PRÊMIO que vai aparecer conforme o intervalo que existe entre esses
+              dois números.
+            </li>
+            <li>Digite no campo acima do botão APOSTAR o número que você acha que foi sorteado entre
+              os valores mínimos e máximos.
+            </li>
+            <li>Aperte o botão APOSTAR e serão exibidas três diferentes informações:
+              <ul>
+                <li>"VOCÊ AINDA NÃO ACERTOU!" - Refaça do passo III para frente.</li>
+                <li>"PARABÉNS, VOCÊ GANHOU!" - Aguarde aparecer um botão de reiniciar, 
+                  aperte-o e refaça do passo I para frente.
+                </li>
+                <li>"VOCÊ PERDEU!" - Aguarde aparecer um botão de reiniciar, 
+                  aperte-o e refaça do passo I para frente.
+                </li>
+              </ul>
+            </li>
+            <li>Após isso, o saldo acima irá aumentar conforme a quantidade que foi 
+              definida do prêmio.</li>
+          </ol>
+          <h2>Prêmio:</h2>
+          <p>O prêmio será definido com base em dois fatores:</p>
+          <ul class = "premioSobre">
+            <li>O tamanho do intervalo entre os valores máximo e mínimo:
+              <ul>
+                <li>Intervalo de 5 até 20 números &rarr; R$10,00</li>
+                <li>Intervalo de 21 até 50 números &rarr; R$100,00</li>
+                <li>Intervalo de 51 até 100 números &rarr; R$500,00</li>
+                <li>Intervalo de 101 até qualquer outro limite de números &rarr; R$1000,00</li>
+              </ul>
+            </li>
+            <li>O total de vezes que o jogador errou o prêmio, sendo que quanto mais o jogador errar
+              mais dinheiro é retirado do prêmio padrão.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class = "rodapeSite">
+        <div class = "contentRodape1">
+          <p>
+            <img src = "../imagens/favicons/favicon.ico">Desenvolvido por Rafael de Souza Lima
+            <img src = "../imagens/favicons/favicon.ico"><br>
+            <address>rafael.souzalima@outlook.com</address>
+            (11) 9 4894-6954
+          </p>
+        </div>
+        <div class = "contentRodape2">
+          <ul class = "menuRodape">
+            <li><a href = "../index.html">&rtrif;Página Inicial</a></li>
+            <li>
+              <a href = "#">&rtrif;JOGOS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/sorteio.html">&rtri;Sorteio</a></li>
+                <li><a href = "#">&rtri;Roleta (EM BREVE)</a></li>
+              </ul>
+            </li>
+            <li><a href = "../paginasHTML/formulario.html">&rtrif;ENTRAR</a></li>
+            <li>
+              <a href = "#">&rtrif;MAIS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/regrasSorteio.html">&rtri;Regras Sorteio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>

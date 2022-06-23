@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>APOSTE AQUI</title>
+    <link rel = "shortcut icon" href = "../imagens/favicons/favicon.ico">
+    <link rel = "stylesheet" href = "../estilosCSS/layout.css">
+    <link rel = "stylesheet" href = "../estilosCSS/formulario.css">
+    <script src = "../codigosJS/formulario.js"></script>
+  </head>
+  <body>
+    <nav class = "topNav">
+      <ul class = "menu">
+        <li>
+          <a href = "../index.html">
+            <span id = "naipePaus">&#9827;</span>
+            <span id = "mainTitulo">APOSTE AQUI</span>
+            <span id = "naipeCopas">&#9829;</span>
+          </a>
+        </li>
+        <li>
+          <a href = "#">JOGOS</a>
+          <ul class = "submenu">
+            <li>
+              <a href = "../paginasHTML/sorteio.html">Sorteio</a>
+            </li>
+            <li>
+              <a href="#">Roleta (EM BREVE)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href = "../paginasHTML/formulario.html">ENTRAR</a>
+        </li>
+        <li>
+          <a href = "#">MAIS</a>
+          <ul class = "submenu">
+            <li><a href = "../paginasHTML/regrasSorteio.html">Regras Sorteio</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+      <main class = "mainSection">
+        <h1>Formulário de Login</h1>
+        <form name = "formUsu">
+          <div class = "campos">
+            <label for = "nome">Nome:</label>
+            <br>
+            <input type = "text" id = "nome" value = "" placeholder = "Ex.:Nome Sobrenome">
+          </div>
+          <div class = "campos">
+            <label for = "dataNas">Data de Nascimento:</label>
+            <br>
+            <input type = "date" id = "dataNas" value = "" placeholder = "Sua data de nascimento">
+          </div>
+          <div class = "campos">
+            <label for = "emailUsu">E-mail:</label>
+            <br>
+            <input type = "email" id = "emailUsu" value = "" placeholder = "Ex.: nome.sobrenome@example.com">
+          </div>
+          <div class = "campos">
+            <label for = "telefone">Telefone/Celular:</label>
+            <br>
+            <input type = "tel" id = "telefone" value = "" placeholder = "Ex.: XXXXXXXXXXX">
+          </div>
+
+          <div class = "botaoForm1">
+            <input type = "button" class = "botao1" value = "Confirmar" onclick = "confirmarDados(this.form)">
+            <input type = "reset" class = "botao2" value = "Limpar">
+          </div>
+          <div class = "botaoForm2">
+            <button type = "submit" class = "botao3">Enviar</button>
+          </div>
+          
+        </form>
+      </main>
+
+      <section class = "confirmacaoSection">
+        <h2>Confirmação de Dados:</h2>
+        <p>Nome: <span id = "nomeExibe"></span></p>
+        <p>Data de Nascimento: <span id = "dataNasExibe"></span></p>
+        <p>E-mail: <span id = "emailExibe"></span></p>
+        <p>Telefone/Celular: <span id = "telefoneExibe"></span></p>
+      </section>
+
+      <footer class = "rodapeSite">
+        <div class = "contentRodape1">
+          <p>
+            <img src = "../imagens/favicons/favicon.ico">Desenvolvido por Rafael de Souza Lima
+            <img src = "../imagens/favicons/favicon.ico"><br>
+            <address>rafael.souzalima@outlook.com</address>
+            (11) 9 4894-6954
+          </p>
+        </div>
+        <div class = "contentRodape2">
+          <ul class = "menuRodape">
+            <li><a href = "../index.html">&rtrif;Página Inicial</a></li>
+            <li>
+              <a href = "#">&rtrif;JOGOS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/sorteio.html">&rtri;Sorteio</a></li>
+                <li><a href = "#">&rtri;Roleta (EM BREVE)</a></li>
+              </ul>
+            </li>
+            <li><a href = "../paginasHTML/formulario.html">&rtrif;ENTRAR</a></li>
+            <li>
+              <a href = "#">&rtrif;MAIS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/regrasSorteio.html">&rtri;Regras Sorteio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>

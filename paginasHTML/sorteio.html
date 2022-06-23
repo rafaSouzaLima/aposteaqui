@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>APOSTE AQUI</title>
+    <link rel = "shortcut icon" href = "../imagens/favicons/favicon.ico">
+    <link rel = "stylesheet" href = "../estilosCSS/layout.css">
+    <link rel = "stylesheet" href = "../estilosCSS/sorteio.css">
+    <script src = "../codigosJS/sorteia.js"></script>
+  </head>
+  <body onload = "IniciaCfg()">
+      <nav class = "topNav">
+        <ul class = "menu">
+          <li>
+            <a href = "../index.html">
+              <span id = "naipePaus">&#9827;</span>
+              <span id = "mainTitulo">APOSTE AQUI</span>
+              <span id = "naipeCopas">&#9829;</span>
+            </a>
+          </li>
+          <li>
+            <a href = "#">JOGOS</a>
+            <ul class = "submenu">
+              <li>
+                <a href = "../paginasHTML/sorteio.html">Sorteio</a>
+              </li>
+              <li>
+                <a href="#">Roleta (EM BREVE)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href = "../paginasHTML/formulario.html">ENTRAR</a>
+          </li>
+          <li>
+            <a href = "#">MAIS</a>
+            <ul class = "submenu">
+              <li><a href = "../paginasHTML/regrasSorteio.html">Regras Sorteio</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <section class = "jogoSorteio">
+        <h1>Sorteio</h1>
+        <p>Não sabe como jogar nesse sorteio? Clique <a href = "../paginasHTML/regrasSorteio.html">AQUI</a> e veja as regras.</p>
+        <div class = "exibeSaldo">
+          <label for = "saldoJogador">Saldo: </label>
+          <br>
+          <input type = "text" id = "saldoJogador" readonly = "true" value = "R$0.00">
+        </div>
+        <div class = "exibeJogo">
+          <div class = "exibeInfo">
+            <label for = "constMin">Min.</label><br>
+            <input type = "text" id = "constMin" readonly = "true" value = ""> 
+          </div>
+          <div class = "exibeInfo">
+            <label for = "numeroSorte">Número Sorteado:</label>
+            <input type = "text" id = "numeroSorte" readonly = "true" value = "">
+          </div>
+          <div class = "exibeInfo">
+            <label for = "constMax">Máx.</label><br>
+            <input type = "text" id = "constMax" readonly = "true" value = "">
+          </div>
+          <div class = exibeStatus>
+            <p class = "msgJogador" id = "msgUsu"></p>
+            <label for = "statusPrem">Prêmio ATUAL:</label>
+            <input type = "text" id = "statusPrem" readonly = "true" value = "">
+          </div>
+          <div class = "containerBt" id = "botaoReinicia">
+            <input type = "button" value = "Reiniciar" id = "reiniciar" class = "btReiniciar" onclick = "IniciaCfg()">
+          </div>
+        </div>
+
+        <form name = "valoresEntradaJogo">
+          <div class = "camposEntrada1">
+            <div class = "campo">
+              <label for="valMin">Digite um valor Mínimo (Estando incluso):</label>
+              <br>
+              <input type = "text" id = "valMin" class = "campoVal" placeholder = "Ex.:1">         
+            </div>
+            <div class = "campo">
+              <label for="valMax">Digite um valor Máximo:</label>
+              <br>
+              <input type = "text" id = "valMax" class = "campoVal" placeholder = "Ex.:10">
+            </div>
+            <div class = "botaoDefine">
+              <input type = "button" value = "DEFINIR INTERVALO" onclick = "DefineMinMax(this.form)">
+            </div>
+          </div>
+  
+          <div class = "camposEntrada2">
+            <div class = "campo">
+              <label for="aposta">Tentativa <span id = "tentaSorteio"></span>:</label>
+              <br>
+              <input type = "text" id = "aposta" class = "campoVal" placeholder = "Ex.:5">
+            </div>
+            <div class = "botaoAposta">
+              <input type = "button" value = "APOSTAR" onclick = "TestaAposta(this.form)">
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <footer class = "rodapeSite">
+        <div class = "contentRodape1">
+          <p>
+            <img src = "../imagens/favicons/favicon.ico">Desenvolvido por Rafael de Souza Lima
+            <img src = "../imagens/favicons/favicon.ico"><br>
+            <address>rafael.souzalima@outlook.com</address>
+            (11) 9 4894-6954
+          </p>
+        </div>
+        <div class = "contentRodape2">
+          <ul class = "menuRodape">
+            <li><a href = "../index.html">&rtrif;Página Inicial</a></li>
+            <li>
+              <a href = "#">&rtrif;JOGOS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/sorteio.html">&rtri;Sorteio</a></li>
+                <li><a href = "#">&rtri;Roleta (EM BREVE)</a></li>
+              </ul>
+            </li>
+            <li><a href = "../paginasHTML/formulario.html">&rtrif;ENTRAR</a></li>
+            <li>
+              <a href = "#">&rtrif;MAIS</a>
+              <ul class = "submenuRodape">
+                <li><a href = "../paginasHTML/regrasSorteio.html">&rtri;Regras Sorteio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+</html>
